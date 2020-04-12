@@ -17,4 +17,4 @@ Added a sphere within the shirt to make it look like a breast. (Basic collision 
 https://www.youtube.com/watch?v=fn-xVN4-P2s&feature=youtu.be
 
 ---To Add---
-Now apply the shirt to a BVH model -> Make it walk around with the shirt on. Make sure the arm is also handled as well.
+Find a way to make it faster goddamn it
