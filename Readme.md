@@ -24,7 +24,7 @@ In that case setting up the Start-Up Project in Visual Studio using cmake requir
 
 Furthermore, within the Visual Studio 2019 IDE the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning as Errors``` had to be unticked in the project file property settings for building the Assimp library.
 
-![TreatWarningAsErrors](screenshots/Capture1.JPG)
+![TreatWarningAsErrors](screenshots/DoNotTreatWarningsAsErrors.JPG)
 ![ExcludeFromBuilding](screenshots/Capture_ExcludeFromProject.JPG)
 
 After building the whole solution is successful, go to the directory ```Build/Glitter/Debug``` and now you can see the ```Glitter.exe``` file. Run it, and enjoy!
