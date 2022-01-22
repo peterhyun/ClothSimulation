@@ -20,7 +20,13 @@ With this boilerplate, you can test this code in Windows, Linux, or Mac environm
 ## How to build and run on Windows10 x64 using Visual Studio 2019
 I primarily used Windows and Visual Studio 2019 for developing this project.  
 In that case setting up the Start-Up Project in Visual Studio using cmake required the following line(Read Glitter's README below).  
-```cmake -G "Visual Studio 16 2019" ..```
+
+```
+git clone --recursive https://github.com/peterhyun/ClothSimulation.git
+cd Glitter
+cd Build
+cmake -G "Visual Studio 16 2019" ..
+```
 
 Furthermore, within the Visual Studio 2019 IDE the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning as Errors``` had to be unticked in the project file property settings for building the Assimp library.
 
