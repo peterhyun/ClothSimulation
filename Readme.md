@@ -23,12 +23,12 @@ In that case setting up the Start-Up Project in Visual Studio using cmake requir
 
 ```
 git clone --recursive https://github.com/peterhyun/ClothSimulation.git
-cd Glitter
+cd ClothSimulation
 cd Build
 cmake -G "Visual Studio 16 2019" ..
 ```
 
-Furthermore, within the Visual Studio 2019 IDE the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning as Errors``` had to be unticked in the project file property settings for building the Assimp library.
+Furthermore, within the Visual Studio 2019 IDE the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning As Errors``` had to be unticked in the project file property settings for building the Assimp library.
 
 ![TreatWarningAsErrors](screenshots/DoNotTreatWarningsAsErrors.JPG)
 ![ExcludeFromBuilding](screenshots/Capture_ExcludeFromProject.JPG)
