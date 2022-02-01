@@ -5,9 +5,9 @@ First attempt of cloth simulation using OpenGL 3.3, GLFW. Implemented physics si
 This is a simple simulation where two points of the shoulder is fixed and the cloth is drooping due to gravity.
 
 ## Demo
-https://www.youtube.com/watch?v=tA5-Y_i0c2A&feature=youtu.be
----update May 1st, 2019---
-Added a sphere within the shirt to make it look like a breast. (Basic collision detection + resolution)
+https://www.youtube.com/watch?v=tA5-Y_i0c2A&feature=youtu.be  
+---update May 1st, 2019---  
+Added a sphere within the shirt to make it look like a breast. (Basic collision detection + resolution):  
 https://www.youtube.com/watch?v=fn-xVN4-P2s&feature=youtu.be
 
 ## How to build and run on Windows10 x64 using Visual Studio 2019
@@ -18,7 +18,7 @@ cd ClothSimulation
 cd Build
 cmake -G "Visual Studio 16 2019" ..
 ```
-Furthermore, within the Visual Studio 2019 IDE the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning As Errors``` had to be unticked in the project file property settings for building the Assimp library.
+Furthermore, within the Visual Studio 2019 IDE, the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning As Errors``` had to be unticked in the project file property settings for building the Assimp library.
 
 ![TreatWarningAsErrors](screenshots/DoNotTreatWarningsAsErrors.JPG)
 ![ExcludeFromBuilding](screenshots/Capture_ExcludeFromProject.JPG)
