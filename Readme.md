@@ -18,6 +18,9 @@ cd ClothSimulation
 cd Build
 cmake -G "Visual Studio 16 2019" ..
 ```
+If you forgot to use the ```--recursive``` flag while cloning this repository, use the following line to update the submodules:  
+```git submodule update --init```
+
 Furthermore, within the Visual Studio 2019 IDE, the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning As Errors``` had to be unticked in the project file property settings for building the Assimp library.
 
 ![TreatWarningAsErrors](screenshots/DoNotTreatWarningsAsErrors.JPG)
