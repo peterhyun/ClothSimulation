@@ -25,33 +25,34 @@ Furthermore, within the Visual Studio 2019 IDE, the .obj file in ```Glitter/Asse
 
 After building the whole solution is successful, go to the directory ```Build/Glitter/Debug``` and now you can see the ```Glitter.exe``` file. Run it, and enjoy!
 ## Directory Structure & Explanation
-.
-├── Build
-├── Glitter/
-│   ├── Assets/
-│   │   └── triangulatedTShirt.obj
-│   ├── Headers/
-│   │   ├── Camera.h
-│   │   ├── EulerStepSolver.h
-│   │   ├── OBJReader.h
-│   │   ├── Particle.h
-│   │   ├── ParticleSystem.h
-│   │   └── Shader.h
-│   ├── Shaders/
-│   │   ├── model_loading.fs
-│   │   └── model_loading.vs
-│   ├── Sources/
-│   │   └── main.cpp
-│   └── Vendor/
-├── screenshots/
-├── CMakeLists.txt
-└── Readme.md
+.  
+├── Build  
+├── Glitter/  
+│   ├── Assets/  
+│   │   └── triangulatedTShirt.obj  
+│   ├── Headers/  
+│   │   ├── Camera.h  
+│   │   ├── EulerStepSolver.h  
+│   │   ├── OBJReader.h  
+│   │   ├── Particle.h  
+│   │   ├── ParticleSystem.h  
+│   │   └── Shader.h  
+│   ├── Shaders/  
+│   │   ├── model_loading.fs  
+│   │   └── model_loading.vs  
+│   ├── Sources/  
+│   │   └── main.cpp  
+│   └── Vendor/  
+├── screenshots/  
+├── CMakeLists.txt  
+└── Readme.md  
 
 The tree above shows the relevant files/folders of my project. 
 
 ## Acknowledgement
 The basic OpenGL Setup boilerplate of this code is from Kevin Fung's Glitter repository: https://github.com/Polytonic/Glitter
 With this boilerplate, you can test this code in Windows, Linux, or Mac environment. The only dependency it requires is CMake.
+
 -------------------------------------------------------------------------------------------------------------------
 ## MIT License of the Glitter Boilerplate
 >The MIT License (MIT)
