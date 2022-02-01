@@ -11,7 +11,7 @@ Added a sphere within the shirt to make it look like a breast. (Basic collision 
 https://www.youtube.com/watch?v=fn-xVN4-P2s&feature=youtu.be
 
 ## How to build and run on Windows10 x64 using Visual Studio 2019
-I primarily used Windows and Visual Studio 2019 for developing this project. However, because it is based on the OpenGL setup boilerplate of Kevin Fung (read acknowledgement below), it is not necessary limited to building on Windows. Linux and Mac environment is also supported. Anyway, to build it on Windows using Visual Studio 2019, use the following code in the cmd.
+I primarily used Windows and Visual Studio 2019 for developing this project. However, because it is based on the OpenGL setup boilerplate of Kevin Fung (read acknowledgement below), it is not necessary limited to building on Windows. Building in a Linux and Mac environment is also supported(I will not add how to do it here as you can go to the following link: https://github.com/Polytonic/Glitter for more information). Anyway, to build it on Windows using Visual Studio 2019, use the following code in the cmd.
 ```
 git clone --recursive https://github.com/peterhyun/ClothSimulation.git
 cd ClothSimulation
@@ -47,7 +47,9 @@ After building the whole solution is successful, go to the directory ```Build/Gl
 ├── CMakeLists.txt  
 └── Readme.md  
 
-The tree above shows the relevant files/folders of my project. 
+The tree above shows the relevant files/folders of my project. All the code that I wrote is in the ./Glitter/Headers/, ./Glitter/Shaders/, and ./Glitter/Sources. directory. In this cloth simulation project, I treated the clothing as a system of particles, and each particle contains the following information: position, velocity, and net force which is implemented in ```Particle.h```. The ```OBJReader``` class parses each vertex written in the obj file into a ```Particle```, and the ```ParticleSystem``` class connects adjacent particles as if a damped mass spring is connected between them. The ```EulerStepSolver``` class applies forces in the ```ParticleSystem``` and calculates the newly updated particle position per time step. The new particle position is rendered on screen via the render loop implemented in ```main.cpp```.
+
+The shaders I utilized are the vertex shader and fragment shader. You can find the relevant glsl code in ```model_loading.vs``` and ```model_loading.fs``` respectively. It's just basic glsl in this case, so I won't go through it deeply.
 
 ## Acknowledgement
 The basic OpenGL Setup boilerplate of this code is from Kevin Fung's Glitter repository: https://github.com/Polytonic/Glitter
