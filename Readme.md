@@ -10,23 +10,38 @@ https://www.youtube.com/watch?v=tA5-Y_i0c2A&feature=youtu.be
 Added a sphere within the shirt to make it look like a breast. (Basic collision detection + resolution):  
 https://www.youtube.com/watch?v=fn-xVN4-P2s&feature=youtu.be
 
-## How to build and run on Windows10 x64 using Visual Studio 2019
-I primarily used Windows and Visual Studio 2019 for developing this project. However, because it is based on the OpenGL setup boilerplate of Kevin Fung (read acknowledgement below), it is not necessary limited to building on Windows. Building in a Linux and Mac environment is also supported(I will not add how to do it here as you can go to the following link: https://github.com/Polytonic/Glitter for more information). Anyway, to build it on Windows using Visual Studio 2019, use the following code in the cmd.
+## How to build and run.
+1. Download this repository and go to AnimationFramework/Build directory.
 ```
-git clone --recursive https://github.com/peterhyun/ClothSimulation.git
-cd ClothSimulation
+git clone --recursive https://github.com/peterhyun/IK_HumanModel.git
+cd IK_HumanModel
 cd Build
-cmake -G "Visual Studio 16 2019" ..
 ```
+
 If you forgot to use the ```--recursive``` flag while cloning this repository, use the following line to update the submodules:  
 ```git submodule update --init```
 
-Furthermore, within the Visual Studio 2019 IDE, the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning As Errors``` had to be unticked in the project file property settings for building the Assimp library.
+2. Make a project/solution file or makefile depending on your platform. I used Microsoft Windows, Visual Studio 2019.
+```
+# UNIX Makefile
+cmake ..
+
+# Mac OSX
+cmake -G "Xcode" ..
+
+# Microsoft Windows
+cmake -G "Visual Studio 16 2019" ..
+...
+```
+3. Build the project on your platform accordingly.
+
+While building with the Visual Studio 2019 IDE, the .obj file in ```Glitter/Assets``` had to be excluded from the project, and the ```Treat Warning As Errors``` had to be unticked in the project file property settings for building the Assimp library.
 
 ![TreatWarningAsErrors](screenshots/DoNotTreatWarningsAsErrors.JPG)
 ![ExcludeFromBuilding](screenshots/Capture_ExcludeFromProject.JPG)
 
-After building the whole solution is successful, go to the directory ```Build/Glitter/Debug``` and now you can see the ```Glitter.exe``` file. Run it, and enjoy!
+4. Go to the directory ```Build/Glitter/Debug``` and now you can see the ```Glitter.exe``` file. Run it with no extra arguments, and enjoy!
+
 ## Directory Structure & Explanation
 .  
 ├── Build  
