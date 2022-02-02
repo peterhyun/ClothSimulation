@@ -11,10 +11,10 @@ Added a sphere within the shirt to make it look like a breast. (Basic collision 
 https://www.youtube.com/watch?v=fn-xVN4-P2s&feature=youtu.be
 
 ## How to build and run.
-1. Download this repository and go to AnimationFramework/Build directory.
+1. Download this repository and go to ```ClothSimulation/Build``` directory.
 ```
-git clone --recursive https://github.com/peterhyun/IK_HumanModel.git
-cd IK_HumanModel
+git clone --recursive https://github.com/peterhyun/ClothSimulation.git
+cd ClothSimulation
 cd Build
 ```
 
