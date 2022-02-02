@@ -1,5 +1,5 @@
 # ClothSimulation
-> April 2018 Jeehon Hyun
+> April 2019 Jeehon Hyun
 
 First attempt of cloth simulation using OpenGL 3.3, GLFW. Implemented physics simulation based on the euler steps method and the damped mass spring model. Got help from here: https://graphics.stanford.edu/~mdfisher/cloth.html
 This is a simple simulation where two points of the shoulder is fixed and the cloth is drooping due to gravity.
